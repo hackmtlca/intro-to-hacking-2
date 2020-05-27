@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <script>
+            const urlParams = new URLSearchParams(window.location.search);
+
+            if(urlParams.get('password') === "123456") {
+                alert("You win!");
+            }
+        </script>
+    </head>
+    <body>
+        <form method="GET">
+            <input name="password" id="password" hidden value="hidden"/>
+            <button type="submit">Sign In</button>
+        </form>
+    </body>
+</html>
+
